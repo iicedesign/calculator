@@ -12,6 +12,7 @@ See [preview](https://codepen.io/iicestudio/full/jOBBerj)
                   +--- style.css
           +------ js/
                   +--- script.js
+          +------ index.php
     +----- src/
           +------ css/
                   +--- _reset.scss
