@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff;
+  font: 0.9rem/1.5 "Orbitron", sans-serif;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  max-width: 350px;
+  min-height: 600px;
+  margin: 5vh auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px 1px rgba(1, 1, 1, 0.25);
+  padding: 25px;
+}
+.calculator__screen {
+  width: calc(100% - 5px);
+  margin: 0 auto;
+  min-height: 200px;
+  font-size: 1.5rem;
+  position: relative;
+  word-break: break-all;
+  overflow: hidden;
+}
+.calculator__screen [data-history] {
+  color: rgba(0, 0, 0, 0.5);
+  float: right;
+  clear: both;
+}
+.calculator__screen [data-output] {
+  font-size: 3rem;
+  margin-top: 128px;
+  display: block;
+  float: right;
+  clear: both;
+}
+.calculator__btns {
+  padding: 10px 0;
+}
+.calculator__btns > button {
+  float: left;
+  margin: 2.5px;
+  width: 70px;
+  height: 65px;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: 0 2px 1px 0 rgba(1, 1, 1, 0.25);
+  cursor: pointer;
+  font-weight: bold;
+  outline: 0;
+}
+.calculator__btns > button:focus {
+  box-shadow: inset 0 0 10px 0 rgba(1, 1, 1, 0.25);
+}
+.calculator__btns [data-operator] {
+  background-color: #E1D5E9;
+}
+.calculator__btns [data-clear] {
+  background-color: #FDB82D;
+  color: #fff;
+  font-size: 1.15rem;
+}
+.calculator__btns [data-percent],
+.calculator__btns [data-sign],
+.calculator__btns [data-delete] {
+  background-color: #F6F0E4;
+}
+.calculator__btns [data-equal] {
+  background-color: #9A2CF1;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.calculator__btns [data-equal] span {
+  position: relative;
+  top: -2px;
+}
+
+/*# sourceMappingURL=style.css.map */
